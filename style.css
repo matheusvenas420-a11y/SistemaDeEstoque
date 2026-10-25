@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #334155;
+    padding: 35px;
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: #1e3a5f;
+}
+
+h2 {
+    color: #1e3a5f;
+    margin: 25px 0 15px;
+}
+
+p {
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button,
+.btn {
+    display: inline-block;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+button:hover,
+.btn:hover {
+    background: #2563eb;
+    text-decoration: none;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="search"],
+input[type="password"],
+textarea,
+select {
+    display: block;
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    margin: 8px 0;
+    max-width: 100%;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #334155;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #94a3b8;
+    opacity: 1;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #bfdbfe;
+    border-color: #3b82f6;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    margin-top: 15px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th {
+    background: #dbeafe;
+    color: #1e3a5f;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 13px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+tbody tr:hover {
+    background: #f8fafc;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+form {
+    margin-top: 10px;
+}
+
+.form-container {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+}
+
+.form-container h1 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #334155;
+}
+
+.form-container input,
+.form-container textarea,
+.form-container select {
+    width: 100%;
+    margin: 0;
+}
+
+.codigo-acoes {
+    display: flex;
+    gap: 8px;
+}
+
+.codigo-acoes input {
+    flex: 1;
+    min-width: 0;
+}
+
+.codigo-acoes button {
+    flex-shrink: 0;
+}
+
+.form-container textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.form-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.form-actions button {
+    margin: 0;
+}
+
+.btn-voltar {
+    display: inline-block;
+    background: #e2e8f0;
+    color: #334155;
+    padding: 10px 15px;
+    border-radius: 6px;
+}
+
+.btn-voltar:hover {
+    background: #cbd5e1;
+    text-decoration: none;
+}
+
+.mensagem-erro {
+    background: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fecaca;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.paginacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin: 20px 0;
+}
+
+.paginacao a {
+    padding: 8px 12px;
+    border-radius: 6px;
+    background: #dbeafe;
+}
+
+a.btn-cadastrar {
+    display: inline-block;
+    background: #3b82f6;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 6px;
+}
+
+a.btn-cadastrar:hover {
+    background: #2563eb;
+    text-decoration: none;
+}
+
+td form {
+    display: inline;
+}
+
+td form button {
+    background: #ef4444;
+}
+
+td form button:hover {
+    background: #dc2626;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .form-actions {
+        align-items: stretch;
+    }
+}
